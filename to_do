@@ -1,0 +1,4 @@
+Hash-Tables
+  -Implement them using LL for collision
+  -Implement them using BBST- or atleast understand how
+  -First code in python, then in C++(probably with templates)

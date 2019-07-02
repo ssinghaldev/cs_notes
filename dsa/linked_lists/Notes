@@ -1,0 +1,32 @@
+Linked Lists(LL) is a linear DS.
+
+Values/Data is not present contiguously.It is connected thru
+pointers/refernces which are present in previous nodes. The idea of using a LL
+over a array is - (atleast in C/C++/Java) is that array is fixed and u can't
+grow them - one has to allocate the memory again, copy the previous elements
+and then proceed. LL in that sense are much easier to implement,
+
+2 types of LL:
+- Single LL
+- Double LL
+Double LL has refrence to previous apart from next which is present in single
+too.
+
+Complexity:
+Type      Insertion   Deletion    Search
+SLL       O(n)        O(n)        O(n)
+DLL       O(n)        O(n)        O(n)
+
+The insertion is O(n) as we are inserting at the last. If we are inserting at
+the beginning, it will be O(n). Although complexities of SLL and DLL are
+similar, DLL helps when u have to move back and forth
+
+It may seem that why we need LL when these days people advocate the use of
+vectors (C++) and list DS present in other langugaes which provides dynmaic
+resizing. As complexities are same for both LL and list DS, list DS are
+preferred as they provide locality of reference and hence better caching.
+Also if there are large num of list members, LL takes up large amount of
+size as it has to store a reference or two.
+
+Anyways I guess, there are some places, we dont know no of elements we are
+gonna end up with, so we just use LL for that flexibility. 
